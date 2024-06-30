@@ -1,0 +1,171 @@
+/* style.css */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+  }
+  
+  .navbar {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+  }
+
+
+
+/* style.css */
+
+/* Add a background image and cover the entire header */
+.bg-cover {
+  background-image: url('/static/pt\ baner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 5rem 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Add a dark overlay to improve text readability */
+.bg-cover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+  z-index: -1;
+}
+
+/* Ensure the content stays above the overlay */
+.jumbotron {
+  position: relative;
+  z-index: 1;
+}
+
+  /* Custom styles for projects section */
+  .card {
+    height: 100%;
+    transition: transform 0.2s ease-in-out;
+  }
+  .card:hover {
+    transform: scale(1.05);
+  }
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  /* Custom styles specific to this page */
+  .about-name {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .about-container img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 30px;
+  }
+  .resume {
+    margin-top: 20px;
+  }
+  .about ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .about ul li {
+    margin-bottom: 15px;
+  }
+  .social-icons a {
+color: #333;
+font-size: 24px;
+margin: 0 10px;
+}
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .skill-logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+  }
+  
+  .skill .percentage {
+    margin-left: auto;
+    font-weight: bold;
+  }
+  
+  .skill-bar {
+    height: 10px;
+    background-color: #007bff;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  
+  footer {
+    padding: 10px 0;
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+  }
+  
+  .experience-section h4::before {
+    content: "\2022"; /* Unicode for bullet point */
+    color: black;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}

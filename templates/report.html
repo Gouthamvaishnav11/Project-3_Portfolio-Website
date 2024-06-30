@@ -1,0 +1,22 @@
+{% extends 'parent.html' %}
+
+{% block  title%}
+<title>Visitor Report</title>
+{% endblock title %}
+    {% block main %}
+    <main>
+
+    <h1>Visitor Report</h1>
+    <p>Total Visits: {{ total_visits }}</p>
+    <p>Total Resume Downloads: {{ total_downloads }}</p>
+    <p>Unique Visitors: {{ unique_visitors }}</p>
+    <h2>Frequent Visitors</h2>
+    <ul>
+        {% for visitor in frequent_visitor_details %}
+            <li>{{ visitor.ip_address }} - {{ visitor.count }} visits, last visited on {{ visitor.last_visit }}</li>
+        {% endfor %}
+    </ul>
+    </main>
+        
+    {% endblock main%}
+    
