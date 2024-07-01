@@ -87,7 +87,7 @@
 <section id="skills" class="container mt-5">
   <h4 class="text-center mb-4">TECHNICAL SKILLS</h4>
   <div class="skills-container row">
-    <div class="skill col-md-6 mb-4 d-flex align-items-center">
+    <div class="skill col-md-6 mb-4 d-flex align-items-center" id="skill-html">
       <div class="skill-logo me-3">
         <img src="/static/html.png" alt="HTML" class="img-fluid" style="max-width: 50px;">
       </div>
@@ -97,7 +97,8 @@
         </div>
       </div>
     </div>
-    <div class="skill col-md-6 mb-4 d-flex align-items-center">
+
+    <div class="skill col-md-6 mb-4 d-flex align-items-center" id="skill-css">
       <div class="skill-logo me-3">
         <img src="/static/css.png" alt="CSS" class="img-fluid" style="max-width: 50px;">
       </div>
@@ -107,9 +108,10 @@
         </div>
       </div>
     </div>
-    <div class="skill col-md-6 mb-4 d-flex align-items-center">
+
+    <div class="skill col-md-6 mb-4 d-flex align-items-center" id="skill-js">
       <div class="skill-logo me-3">
-        <img src="/static/js.jpg" alt="JavaScript" class="img-fluid" style="max-width: 50px;">
+        <img src="/static/js.jpg" alt="JAVASCRIPT" class="img-fluid" style="max-width: 50px;">
       </div>
       <div class="w-100">
         <div class="progress">
@@ -117,29 +119,32 @@
         </div>
       </div>
     </div>
-    <div class="skill col-md-6 mb-4 d-flex align-items-center">
+
+    <div class="skill col-md-6 mb-4 d-flex align-items-center" id="skill-python">
+      <div class="skill-logo me-3">
+        <img src="/static/python.jpg" alt="PYTHON" class="img-fluid" style="max-width: 50px;">
+      </div>
+      <div class="w-100">
+        <div class="progress">
+          <div class="progress-bar bg-danger" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill col-md-6 mb-4 d-flex align-items-center" id="skill-backend development">
+      <div class="skill-logo me-3">
+        <img src="/static/development.png" alt="BACKEND DEVELOPMENT" class="img-fluid" style="max-width: 50px;">
+      </div>
+      <div class="w-100">
+        <div class="progress">
+          <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill col-md-6 mb-4 d-flex align-items-center" id="skill-c">
       <div class="skill-logo me-3">
         <img src="/static/c.png" alt="C" class="img-fluid" style="max-width: 50px;">
-      </div>
-      <div class="w-100">
-        <div class="progress">
-          <div class="progress-bar bg-danger" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
-        </div>
-      </div>
-    </div>
-    <div class="skill col-md-6 mb-4 d-flex align-items-center">
-      <div class="skill-logo me-3">
-        <img src="/static/python.jpg" alt="Python" class="img-fluid" style="max-width: 50px;">
-      </div>
-      <div class="w-100">
-        <div class="progress">
-          <div class="progress-bar bg-primary" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
-        </div>
-      </div>
-    </div>
-    <div class="skill col-md-6 mb-4 d-flex align-items-center">
-      <div class="skill-logo me-3">
-        <img src="/static/microsoft.jpg" alt="Microsoft" class="img-fluid" style="max-width: 50px;">
       </div>
       <div class="w-100">
         <div class="progress">
@@ -147,9 +152,13 @@
         </div>
       </div>
     </div>
-  </div>
-</section>
 
+
+    <div class="detailed-view" id="detailed-view">
+      <h5 id="skill-name"></h5>
+      <p id="skill-details"></p>
+      <button class="btn btn-secondary" onclick="closeDetailView()">Close</button>
+  </div>
 
       <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -159,6 +168,8 @@
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+     
 
     
     
