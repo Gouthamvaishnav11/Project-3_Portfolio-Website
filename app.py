@@ -23,7 +23,6 @@ class Visitor(db.Model):
     message = db.Column(db.Text)
     visit_time = db.Column(db.DateTime, default=datetime.now)
 
-#
 # Track visitors before each request
 @app.before_request
 def track_visitor():
@@ -40,13 +39,25 @@ def track_visitor():
 # Route to handle downloading resume
 @app.route('/download')
 def download_resume():
-    visitor = Visitor(
-        ip_address=request.remote_addr,
-        user_agent=request.user_agent.string,
-        is_download=True
-    )
-    db.session.add(visitor)
-    db.session.commit()
+    # Mark the download in the session if not already marked
+    if 'downloaded' not in session:
+        session['downloaded'] = True
+        
+        # Update the visitor's is_download status if the visitor record already exists in the session
+        visitor = Visitor.query.filter_by(ip_address=request.remote_addr, user_agent=request.user_agent.string).first()
+        if visitor:
+            visitor.is_download = True
+            db.session.commit()
+        else:
+            # Add a new visitor entry if it does not exist
+            new_visitor = Visitor(
+                ip_address=request.remote_addr,
+                user_agent=request.user_agent.string,
+                is_download=True
+            )
+            db.session.add(new_visitor)
+            db.session.commit()
+
     return redirect(url_for('static', filename='resume.pdf'))
 
 # Route for index page
