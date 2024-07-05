@@ -9,3 +9,13 @@ HTML/CSS/JavaScript: Frontend technologies
 Interactive Skills Section: Double-click on skill images to reveal descriptions
 Resume Download Tracking: Logs IP address and user agent of users downloading the resume
 
+Note: To run this portfolio on your local machine, please follow these steps:
+1.Create a virtual environment:python -m venv back
+2.Activate the virtual environment:back\Scripts\activate
+ You can use the TAB key for auto-completion:
+ Type ba and press TAB (it will complete to back)
+ Type \Sc and press TAB (it will complete to Scripts)
+ Type \ac and press TAB (it will complete to activate)
+3.Install Flask:pip install flask
+4.Install SQLAlchemy:pip install flask_sqlalchemy
+![com](https://github.com/Gouthamvaishnav11/project/assets/164034025/8a0c2cf4-2d81-4bf6-a5f1-fbaeb3d5b37d)
