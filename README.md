@@ -18,4 +18,4 @@ Note: To run this portfolio on your local machine, please follow these steps:
  Type \ac and press TAB (it will complete to activate)
 3.Install Flask:pip install flask
 4.Install SQLAlchemy:pip install flask_sqlalchemy
-![com](https://github.com/Gouthamvaishnav11/project/assets/164034025/8a0c2cf4-2d81-4bf6-a5f1-fbaeb3d5b37d)
+
