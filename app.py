@@ -1,3 +1,4 @@
+# from flask importing Flask
 from flask import Flask, render_template, request, session, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
@@ -18,14 +19,16 @@ class Visitor(db.Model):
     ip_address = db.Column(db.String(100))
     user_agent = db.Column(db.String(200))
     is_download = db.Column(db.Boolean, default=False)
+    visit_time = db.Column(db.DateTime, default=datetime.now)
     name = db.Column(db.String(100))
     email = db.Column(db.String(120))
     message = db.Column(db.Text)
-    visit_time = db.Column(db.DateTime, default=datetime.now)
+    
 
 # Track visitors before each request
 @app.before_request
 def track_visitor():
+
     if 'visited' not in session:
         session['visited'] = True
         visitor = Visitor(
@@ -68,19 +71,24 @@ def index():
 # Route for contact form
 @app.route('/contact', methods=["GET", "POST"])
 def contact():
+
     if request.method == "POST":
+        # fetch the values of name,email,message
         sendername = request.form.get('Sendername')
         senderemail = request.form.get('Senderemail')
         sendermessage = request.form.get('Sendermessage')
 
         # Create a new Visitor instance and add to database
         new_visitor = Visitor(name=sendername, email=senderemail, message=sendermessage)
+        # add it to the database
         db.session.add(new_visitor)
         db.session.commit()
 
+        # returning the contact page
         return redirect('/contact')  # Redirect after form submission
 
     else:
+        # fetching all details 
         alldetails = Visitor.query.all()
         return render_template('contact.html', alldetails=alldetails)
 

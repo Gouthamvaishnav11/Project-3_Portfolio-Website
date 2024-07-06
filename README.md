@@ -19,3 +19,6 @@ Note: To run this portfolio on your local machine, please follow these steps:
 3.Install Flask:pip install flask
 4.Install SQLAlchemy:pip install flask_sqlalchemy
 
+To view the data, open Chrome and search for "SQLite viewer." You will see the GitHub SQLite viewer or you can just click on the link below and drag the visitors.db file into the viewer.
+
+https://inloop.github.io/sqlite-viewer/
