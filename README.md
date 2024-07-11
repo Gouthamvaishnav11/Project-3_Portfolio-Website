@@ -44,7 +44,7 @@ Access the Portfolio:
 Open your web browser and navigate to http://127.0.0.1:8000.
 Explore the Features:
 
-Browse through different sections to see my  Home ,aboutme, projects, contact information on navbar.
+Browse through different sections to see my  Home ,aboutme, projects, contact information.
 Double-click on any skill image in the skills section to reveal a small description of the skill.
 Download my resume to see the tracking feature in action.
 View Database Data:
