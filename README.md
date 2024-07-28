@@ -14,7 +14,7 @@ Installation
 To run this portfolio on your local machine, follow these steps:
 
 1.Clone the Repository:
-https://github.com/Gouthamvaishnav11/PORTFOLIO-WEBSITE
+https://github.com/Gouthamvaishnav11/Project-3_Portfolio-Website
 cd PORTFOLIO-WEBSITE
 
 2.Create a Virtual Environment:
