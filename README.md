@@ -1,24 +1,55 @@
+Goutham's Portfolio
 Welcome to Goutham's Portfolio! This project showcases my work, skills, and projects in Python programming and development.
-Portfolio Website
-This README file provides a comprehensive guide on setting up and running a portfolio website built using the Flask web framework. The website uses HTML, CSS, and JavaScript for the frontend and SQLAlchemy ORM for database management. The key feature of this portfolio is an interactive skills section where a double-click on a skill image opens a small description of the skill. Additionally, the website tracks details of resume downloads, including the IP address and user agent of the downloader,visiting time and contact details like name,email,message .
 
-Features:
-Flask: Backend web framework
-SQLAlchemy: ORM for database operations
-HTML/CSS/JavaScript: Frontend technologies
-Interactive Skills Section: Double-click on skill images to reveal descriptions
-Resume Download Tracking: Logs IP address and user agent of users downloading the resume
+Project Overview
+This portfolio website is built using the Flask web framework and demonstrates my expertise in Python, web development, and database management. The frontend is created with HTML, CSS, and JavaScript, while the backend uses SQLAlchemy ORM for database operations.
 
-Note: To run this portfolio on your local machine, please follow these steps:
-1.Create a virtual environment:python -m venv back
-2.Activate the virtual environment:back\Scripts\activate
- You can use the TAB key for auto-completion:
- Type ba and press TAB (it will complete to back)
- Type \Sc and press TAB (it will complete to Scripts)
- Type \ac and press TAB (it will complete to activate)
-3.Install Flask:pip install flask
-4.Install SQLAlchemy:pip install flask_sqlalchemy
+Key Features:
+Flask: Backend web framework for handling server-side logic.
+SQLAlchemy: ORM for seamless database operations.
+HTML/CSS/JavaScript: Frontend technologies for building a responsive and interactive user interface.
+Interactive Skills Section: Double-click on skill images to reveal detailed descriptions.
+Resume Download Tracking: Logs IP address, user agent, visiting time, and contact details (name, email, message) of users downloading the resume.
+Installation
+To run this portfolio on your local machine, follow these steps:
 
-To view the data, open Chrome and search for "SQLite viewer." You will see the GitHub SQLite viewer or you can just click on the link below and drag the visitors.db file into the viewer.
+1.Clone the Repository:
+https://github.com/Gouthamvaishnav11/Project-3_Portfolio-Website
+cd PORTFOLIO-WEBSITE
 
+2.Create a Virtual Environment:
+python -m venv back
+
+3.Activate the Virtual Environment:
+.On Windows:
+back\Scripts\activate
+.You can use the TAB key for auto-completion:
+Type ba and press TAB (it will complete to back)
+Type \Sc and press TAB (it will complete to Scripts)
+Type \ac and press TAB (it will complete to activate)
+.On macOS and Linux:
+source back/bin/activate
+
+4.Install Flask:
+pip install flask
+
+5.Install SQLAlchemy:
+pip install flask_sqlalchemy
+
+6.Run the Application:
+python app.py
+Usage Instructions
+Access the Portfolio:
+
+Open your web browser and navigate to http://127.0.0.1:8000.
+Explore the Features:
+
+Browse through different sections to see my  Home ,aboutme, projects, contact information.
+Double-click on any skill image in the skills section to reveal a small description of the skill.
+Download my resume to see the tracking feature in action.
+View Database Data:
+To view the data, open Chrome and search for "SQLite viewer." You will see the GitHub SQLite viewer, or you can just click on the link below and drag the visitors.db file into the viewer.
 https://inloop.github.io/sqlite-viewer/
+Feel free to explore and interact with the portfolio to learn more about my skills and projects. If you have any questions or feedback, please contact me through the contact form on the website.
+
+
