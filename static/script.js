@@ -18,15 +18,15 @@ document.addEventListener('DOMContentLoaded', () => {
         switch(skillId) {
             case 'skill-html':
                 name = 'HTML';
-                details = 'HyperText Markup Language (HTML) is the standard markup language for creating web pages and web applications.';
+                details = 'HTML (HyperText Markup Language) is the backbone of any website, used for structuring content such as text, images, and links.';
                 break;
             case 'skill-css':
                 name = 'CSS';
-                details = 'Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML.';
+                details = 'CSS (Cascading Style Sheets) adds style and visual appeal by controlling layout, colors, fonts, and positioning, allowing you to design visually engaging websites.';
                 break;
             case 'skill-js':
                 name = 'JavaScript';
-                details = 'JavaScript is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.';
+                details = 'JavaScript adds interactivity, enabling features like form validation, dynamic content updates, animations, and user engagement without needing to reload the page. With these three technologies combined, you can build anything from basic websites to complex, feature-rich web applications that provide seamless user experiences.';
                 break;
             case 'skill-c':
                 name = 'C';
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 break;
             case 'skill-backend development':
                 name = 'Backend Development';
-                details = 'Backend development with Flask involves creating server-side logic for web applications, handling requests and responses, interacting with databases, and ensuring secure and efficient data processing.';
+                details = 'A backend developer using Flask with SQLAlchemy ORM builds efficient web applications by managing databases through object-relational mapping. This ensures smooth data handling, secure operations, and scalable backend solutions.';
                 break;
             default:
                 name = 'Unknown';
