@@ -29,34 +29,6 @@ body {
     font-family: 'Poppins', sans-serif; /* Apply Poppins to form labels */
 }
 
-
-/* body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color:#007bff;
-  }
-  
-  .navbar {
-    background-color: #edf0e9;
-    color: #fff;
-  }
-  
-  .content {
-    padding: 20px;
-  }
-  
-  .contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .form-group label {
-    font-weight: bold;
-  } */
-
-
-
 /* style.css */
 
 /* Add a background image and cover the entire header */
@@ -227,4 +199,19 @@ margin: 0 10px;
 /* Color customization */
 .text-light {
   color: #d3d3d3; /* Light color for better contrast */
+}
+
+
+
+.project-heading {
+  font-size: 2.5rem; /* Adjust the size as needed */
+  font-family: 'Poppins', sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #333; /* Adjust color as needed */
+}
+.project-description {
+  font-size: 1.2rem; /* Adjust the size as needed */
+  font-family: 'Poppins', sans-serif;
+  color: #555; /* Adjust color as needed */
 }
